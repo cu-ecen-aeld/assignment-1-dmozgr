@@ -3,9 +3,10 @@
 writefile=$1
 writestr=$2
 
-if[ $# -eq 1 ]
+if[ $# -lt 2 ]
 then
     exit 1
+fi
 
 
 echo $writestr > $writefile
